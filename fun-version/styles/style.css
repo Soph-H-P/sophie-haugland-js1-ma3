@@ -1,0 +1,172 @@
+body {
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: "Bungee Shade", Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.container {
+  margin: 100px auto;
+  max-width: 420px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px 15px;
+}
+
+.games {
+  border: solid 1px #000;
+  max-width: 300px;
+  padding: 10px;
+  box-shadow: #000 10px 10px;
+}
+
+.image-wrapper {
+  max-width: 300px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+/*loader styles*/
+/*loader styles*/
+
+.loading {
+  background: #000;
+  width: 410px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.platform {
+  position: relative;
+  height: 20px;
+  width: 390px;
+  background: #fff;
+  margin: 150px 10px 10px 10px;
+}
+
+.loading-buddy {
+  position: absolute;
+  top: -60px;
+  width: 60px;
+  height: 60px;
+  left: 0%;
+  background-image: url("../images/loading-buddy.svg");
+  background-size: cover;
+  animation: slideRight 4s infinite;
+}
+
+.loader {
+  font-family: "Bungee Shade", Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  position: absolute;
+  top: -40px;
+  left: 150px;
+  color: #000;
+}
+
+@keyframes slideRight {
+  0% {
+    left: 0%;
+  }
+  25% {
+    left: 35%;
+    top: -110px;
+    height: 120px;
+    width: 120px;
+  }
+  50% {
+    left: 85%;
+    top: -60px;
+    width: 60px;
+    height: 60px;
+  }
+  75% {
+    left: 35%;
+    top: -110px;
+    height: 120px;
+    width: 120px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.stars {
+  display: inline-block;
+  position: relative;
+  margin: 0 0.5em;
+  height: 1em;
+  width: 5em;
+  background: url(../images/rating-buddy-empty.svg) repeat;
+  background-size: 1em 1em;
+}
+
+.star-rating {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 0em;
+  background: url(../images/rating-buddy-filled.svg) repeat;
+  background-size: 1em 1em;
+}
+
+.view-more {
+  border: solid 1px #000;
+  border-radius: 30px;
+  padding: 10px;
+  height: 3em;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.view-more:hover {
+  transform: translateX(10px);
+  box-shadow: #000 10px 10px;
+}
+
+.view-more:active {
+  background-color: #000;
+  color: #fff;
+  box-shadow: none;
+  transform: translateX(10px);
+}
+
+.error {
+  background-color: rgb(247, 175, 175) ;
+  color: rgb(171, 27, 27);
+  padding: 10px;
+  border: rgb(171, 27, 27) 2px solid;
+}
+
+
+@media (min-width: 760px) {
+  .container {
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
