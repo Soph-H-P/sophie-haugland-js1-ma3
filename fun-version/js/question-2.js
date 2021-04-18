@@ -1,6 +1,6 @@
-// let API_key = "1d7698ea36fa431abb078ec351507e01";
-// const API_URL = `https://api.rawg.io/api/games?key=${API_key}&dates=2019-01-01,2019-12-31&ordering=-rating`
-const API_URL = `https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating`;
+let API_key = "1d7698ea36fa431abb078ec351507e01";
+const API_URL = `https://api.rawg.io/api/games?key=${API_key}&dates=2019-01-01,2019-12-31&ordering=-rating`;
+// const API_URL = `https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating`;
 
 const container = document.querySelector(".container");
 let numberToView = 8;
